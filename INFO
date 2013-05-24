@@ -1,0 +1,12 @@
+w konsoli: (ustawia zmienne środowiskowe)
+
+SET PATH=%PATH%;D:\xampp\php
+SET PATH=%PATH%;C:\Program Files (x86)\Git\cmd
+
+ZFTOOL - composer require zendframework/zftool:dev-master z gitBasha - nie działa
+
+git clone https://github.com/zendframework/ZFTool.git w katalogu głównym ZF2/vendor + zmiana nazwy katalogu na ZFTool
+php composer.phar install - błąd translator ?
+do katalogu ZFTool przekopiować zftool.phar - odpalać "php zftool.phar"
+
+
