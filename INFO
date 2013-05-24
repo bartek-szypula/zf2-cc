@@ -65,5 +65,19 @@ pojawi się biblioteka w "vendor/zendframework/zendframework/library/Zend/Authen
 
 instalcja https://github.com/silvester/ReverseOAuth2
 
+--- https://github.com/zendframework/ZendDeveloperTools instalacja:
+
+D:\xampp\htdocs\ZF2\cc\ZendSkeletonApplication-master>php composer.phar update
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+  - Installing zendframework/zend-developer-tools (dev-master d80a29f)
+    Cloning d80a29f8433dfcd37e8a13180a3b63f2c1b71104
+
+zendframework/zend-developer-tools suggests installing bjyoungblood/bjy-profiler (Version: dev-master, allows the usage of the (Zend) Db collector.)
+Writing lock file
+Generating autoload files
+
+D:\xampp\htdocs\ZF2\cc\ZendSkeletonApplication-master>
+
 ---
 

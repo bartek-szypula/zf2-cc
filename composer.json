@@ -18,6 +18,7 @@
         "zendframework/zendframework": ">2.2.0rc1",
         "zendframework/zftool": "dev-master",
         "zendframework/zend-authentication": "dev-master",
-        "silvester/reverse-oauth2": "dev-master"
+        "silvester/reverse-oauth2": "dev-master",
+        "zendframework/zend-developer-tools": "dev-master"
     }
 }
