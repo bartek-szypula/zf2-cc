@@ -19,6 +19,7 @@
         "zendframework/zftool": "dev-master",
         "zendframework/zend-authentication": "dev-master",
         "silvester/reverse-oauth2": "dev-master",
-        "zendframework/zend-developer-tools": "dev-master"
+        "zendframework/zend-developer-tools": "dev-master",
+        "doctrine/common" : ">=2.1"
     }
 }
