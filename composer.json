@@ -7,9 +7,17 @@
         "zf2"
     ],
     "homepage": "http://framework.zend.com/",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.zendframework.com/"
+        }
+    ],
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": ">2.2.0rc1",
-        "zendframework/zftool": "dev-master"
+        "zendframework/zftool": "dev-master",
+        "zendframework/zend-authentication": "dev-master",
+        "silvester/reverse-oauth2": "dev-master"
     }
 }

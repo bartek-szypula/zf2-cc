@@ -3,10 +3,67 @@ w konsoli: (ustawia zmienne środowiskowe)
 SET PATH=%PATH%;D:\xampp\php
 SET PATH=%PATH%;C:\Program Files (x86)\Git\cmd
 
+--- ZFTool v1
+
+dopisać do composer.json do require:
+"zendframework/zftool": "dev-master"
+
+composer.phar self-update
+... install i powinno pojawić się w vendor/zendframework/zftool
+
+--- v2
+
 ZFTOOL - composer require zendframework/zftool:dev-master z gitBasha - nie działa
 
 git clone https://github.com/zendframework/ZFTool.git w katalogu głównym ZF2/vendor + zmiana nazwy katalogu na ZFTool
 php composer.phar install - błąd translator ?
 do katalogu ZFTool przekopiować zftool.phar - odpalać "php zftool.phar"
 
+---
+
+Autentykacja - proces sprawdzania czy dany podmiot jest naprawdę tym za kogo 
+się podaje. 
+
+Autoryzacja - proces, w którym się sprawdza czy dany podmiot (o ustalonej 
+wcześniej tożsamości) ma prawo dostępu do zasobów, o które prosi. 
+
+Inaczej mówiąc autentykacja to sprawdzenie czy Ty to Ty i może być słaba 
+(podajesz identyfikator + hasło) lub silna (identyfikator + hasło + np. token 
+lub hasła jednorazowe) 
+
+---
+
+COMPOSER: http://moquet.net/blog/5-features-about-composer-php/
+
+dodawanie package'ów do ZF2 : https://packages.zendframework.com/#source
+
+dodać do composer.json:
+"repositories": [
+    {
+        "type": "composer",
+        "url": "https://packages.zendframework.com/"
+    }
+],
+
+dopisać wybrana paczkę z Packages - sprawdzić czy już nie ma biblioteki w "vendor/zendframework/zendframework/library/Zend/Authentication" etc.
+
+"require": {
+    "zendframework/zend-config": "2.*",
+    "zendframework/zend-http": "2.*"
+},
+
+php composer.phar install - błąd "Warning: The lock file is not up to date with the latest changes in composer.json. You may be getting outdated dependencies. Run update to update them."
+
+php composer.phar update - błąd "You must enable the openssl extension in your php.ini to load information from https://packages.zendframework.com":
+w php.ini ";extension=php_openssl.dll" -> extension=php_openssl.dll
+
+php composer.phar upadte ew. self-update, potem ... install
+
+pojawi się biblioteka w "vendor/zendframework/zendframework/library/Zend/Authentication"
+
+---
+
+instalcja https://github.com/silvester/ReverseOAuth2
+
+---
 
